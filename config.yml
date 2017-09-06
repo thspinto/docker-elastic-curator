@@ -2,10 +2,10 @@
 # not a Python "NoneType"
 client:
   hosts:
-    - ${ELASTIC_SEARCH_HOST}
-  port: ${ELASTIC_SEARCH_PORT}
+    - ${ELASTIC_SEARCH_HOST:localhost}
+  port: ${ELASTIC_SEARCH_PORT:9200}
   url_prefix:
-  use_ssl: False
+  use_ssl: ${USE_SSL:True}
   certificate:
   client_cert:
   client_key:
