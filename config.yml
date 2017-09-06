@@ -5,11 +5,11 @@ client:
     - ${ELASTIC_SEARCH_HOST}
   port: ${ELASTIC_SEARCH_PORT}
   url_prefix:
-  use_ssl: True
+  use_ssl: False
   certificate:
   client_cert:
   client_key:
-  ssl_no_validate: False
+  ssl_no_validate: True
   http_auth:
   timeout: 30
   master_only: False
